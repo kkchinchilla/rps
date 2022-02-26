@@ -3,7 +3,7 @@ let options =
 	["rock","paper","scissors"];
 let computerchoice;
 let userchoice;
-let result, buttons, computer_result, your_wins, computer_wins, ties, round_count;
+let result, buttons, computer_result, your_wins, computer_wins, ties, round_count, resultstring;
 
 // FUNCTIONS AFTER VARIABLES
 function makeComputerChoice(){
@@ -33,9 +33,9 @@ function makeUserChoice(choice){
 	makeGameResult();
 }
 function makeGameResult(){
-	let resultstring = "";
 	if(userchoice == computerchoice) {
 		console.log("It's a tie");
+		resultstring.innerHTML="It's a tie!";
 		ties.innerHTML = parseInt(ties.innerText)+1;
 		
 	}
@@ -45,6 +45,7 @@ function makeGameResult(){
         (userchoice == 2 && computerchoice == 0) 
 		) {
 		console.log("You lost!");
+		resultstring.innerHTML="You lost!";
 		computer_wins.innerHTML = parseInt(computer_wins.innerText)+1;
 		console.log(computer_wins);
 	}
@@ -55,14 +56,12 @@ function makeGameResult(){
         
 		) {
 		console.log("You won!");
+		resultstring.innerHTML="You won!";
 
 		your_wins.innerHTML = parseInt(your_wins.innerText)+1;
 		
 	}
 
-	result.innerHTML += 
-		resultstring;
-	// showResults();
 
 	round_count.innerHTML = parseInt(round_count.innerText)+1;
 }
@@ -92,4 +91,5 @@ window.onload = function(){
     ties = document.querySelector("#tiecount");
     computer_wins = document.querySelector("#computerwincount");
     round_count = document.querySelector("#roundcount");
+    resultstring = document.querySelector("#rps_result");
 }
