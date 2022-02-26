@@ -1,0 +1,91 @@
+body {
+    background: #fff;
+    color: #E95151;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    }
+
+h3 {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#your_win_count, #tie_count, #computer_win_count {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#board {
+    width: 400px;
+    height: 200px;
+    margin:50px auto;
+    margin-bottom: 0;
+    color: #fff;
+    background-color: #E95151;
+    border-radius: 20px;
+}
+
+.role {
+    display: inline-block;
+}
+
+
+#rps_buttons, #rps_result{
+    width:50%;
+    min-width: 645px;
+    margin:0 auto;
+    position:relative;
+    top:100px;
+}
+div{
+    margin:5% auto;
+    text-align: center;
+}
+img {
+    display:inline-block;
+	width:100px;
+	height:100px;
+    margin: 0 20px;
+	background-repeat:no-repeat;
+}
+button {
+    border-radius:25px;
+	border-width:0;
+}
+.rps_btn{
+	display:inline-block;
+	width:50px;
+    height: 50px;
+	background-repeat:no-repeat;
+    margin: 1%;
+}
+.btn_rock {
+	background-image:url(../images/rock.svg);
+    transition: all 0.3s;
+}
+.btn_paper {
+	background-image:url(../images/paper.svg);
+    transition: all 0.3s;
+   
+}
+.btn_scissors {
+	background-image:url(../images/scissors.svg);
+    transition: all 0.3s;
+  
+}
+
+.btn_rock:hover {
+    box-shadow: 2px 2px 3px #AA9797;
+    transform: translateX(-2px);
+    transform: translateY(-2px);
+}
+.btn_paper:hover {
+    box-shadow: 2px 2px 3px #AA9797;
+    transform: translateX(-2px);
+    transform: translateY(-2px);
+}
+.btn_scissors:hover {
+    box-shadow: 2px 2px 3px #AA9797;
+    transform: translateX(-2px);
+    transform: translateY(-2px);
+}

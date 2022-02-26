@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RPS</title>
+	<script src="js/rsp.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;640&family=Inter:wght@400;800&family=Outfit:wght@200;300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;1,300&family=Raleway:wght@800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/rsp.css">
+</head>
+
+<body>
+	<div class="round_count">
+		<h3>ROUND</h3>
+		<h3 id="roundcount">1</h3>
+	</div>
+	<div id="score">
+		<div id="your_win_count">
+			<p>WIN</p>
+			<p id="yourwincount">0</p>
+		</div>
+		<div id="tie_count">
+			<p>TIE</p>
+			<p id="tiecount">0</p>
+		</div>
+		<div id="computer_win_count">
+			<p>WIN</p>
+			<p id="computerwincount">0</p>
+		</div>
+	</div>
+	<div id="board">
+		<div class="role">
+			<p>YOU</p>
+			<div id="yourchoice">
+				<img src="images/rock_left.svg" >
+			</div>
+		</div>
+		<div class="role">
+			<p>COMPUTER</p>
+			<div id="computerchoice">
+				<img src="images/rock_right.svg" >
+			</div>
+		</div>
+	</div>
+
+	<div id="rps_buttons">
+		<button class="rps_btn btn_rock"></button>
+		<button class="rps_btn btn_paper"></button>
+		<button class="rps_btn btn_scissors"></button>
+	</div>
+<div id="rps_result" class=""></div>
+
+</body>
+</html>
